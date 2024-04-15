@@ -32,7 +32,7 @@ pipeline {
         stage('Deployment') {
             steps {
                 scp target/gamutkart.war gamut@172.31.26.38:/home/gamut/Distros/apache-tomcat-9.0.87/webapps'
-                ssh gamut@172.31.26.38 "/home/gamut/Distros/apache-tomcat-9.0.87/bin/startup.sh"'
+        	gamut@172.31.26.38 "/home/gamut/Distros/apache-tomcat-9.0.87/bin/startup.sh"'
             }
         }
     }
